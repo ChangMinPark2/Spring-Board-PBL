@@ -30,4 +30,10 @@ public class Post extends BaseEntity {
 
     @Column(name = "post_date")
     private LocalDateTime createAt;
+
+    public Post(String title, String content) {
+        this.title = title;
+        this.content = content;
+        this.createAt = LocalDateTime.now();
+    }
 }
