@@ -1,4 +1,4 @@
-package kr.co.board.persistence;
+package kr.co.board.api.persistence;
 
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -11,7 +11,7 @@ import lombok.Getter;
 @MappedSuperclass
 @EqualsAndHashCode(of = "id")
 public abstract class BaseEntity {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
 }
