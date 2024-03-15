@@ -14,6 +14,7 @@ import kr.co.board.api.dto.request.post.PostCreateDto;
 import kr.co.board.api.dto.request.post.PostUpdateDto;
 import kr.co.board.api.dto.response.post.PostResDto;
 import kr.co.board.api.persistence.BaseEntity;
+import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
@@ -22,7 +23,7 @@ import lombok.NoArgsConstructor;
 @Getter
 @Where(clause = "post_deleted = false") // 쿼리 실행 시 삭제되지 않은 엔티티만 조회
 @SQLDelete(sql = "UPDATE tbl_posts SET post_deleted = true WHERE post_id = ?")
-@NoArgsConstructor
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
 @AttributeOverride(
 	name = "id",
 	column = @Column(name = "post_id")
