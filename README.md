@@ -60,4 +60,8 @@
 * 4일
 <br>
 
-## 결과물 예시 
+## 🚀 결과물
+### DB 스키마와 소스코드
+![image](https://github.com/ChangMinPark2/Spring-API-Modeling-PBL/assets/110027004/6f4e7d44-97e9-46f7-9fc8-548f0aa546fe)
+
+
