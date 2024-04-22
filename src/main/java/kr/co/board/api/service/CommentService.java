@@ -63,6 +63,8 @@ public class CommentService {
 
 	/**
 	 * 예외 클래스명 같은 경우, 어떤 예외인지가 앞에 오는걸 좋아함 -> 그리고 더 간결한게 최고임 -> 범용성이 있어야 함
+	 * ~~~로 인하여 예외처리가 된
+	 * test
 	 */
 	private void validateDeleted(Comment comment) {
 		if (Boolean.TRUE.equals(comment.getDeleted())) {
